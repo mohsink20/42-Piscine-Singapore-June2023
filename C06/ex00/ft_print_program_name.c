@@ -18,3 +18,10 @@ int	main(int argc, char *argv[])
 	ft_putchar('\n');
 	return (0);
 }
+/*
+Test
+
+1) Compile the code: gcc -Wall -Werror -Wextra ft_print_program_name.c -o test
+2) Run: ./test Hello World
+3) Output: ./test
+*/

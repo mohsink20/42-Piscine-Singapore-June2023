@@ -45,3 +45,15 @@ int		main(int argc, char *argv[])
 	}
 	return (0);
 }
+/*
+Test
+
+1) Compile the code: gcc -Wall -Werror -Wextra ft_sort_params.c -o test
+2) Run: ./test Z B A Q M K
+3) Output: A
+	   B
+	   K
+	   M
+	   Q
+	   Z
+*/

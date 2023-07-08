@@ -24,3 +24,11 @@ int	main(int argc, char *argv[])
 	}
 	return (0);
 }
+/*
+Test
+
+1) Compile the code: gcc -Wall -Werror -Wextra ft_rev_params.c -o test
+2) Run: ./test Hello World
+3) Output: World
+	   Hello
+*/
