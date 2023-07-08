@@ -14,3 +14,19 @@ char	*ft_strdup(char *src)
 		a[len] = src[len];
 	return (a);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	char str[] = "Hello, world!";
+	char *duplicate = ft_strdup(str);
+
+	printf("Original string: %s\n", str);
+	printf("Duplicate string: %s\n", duplicate);
+
+	free(duplicate);
+
+	return 0;
+}
+*/

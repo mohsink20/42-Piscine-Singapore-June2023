@@ -28,3 +28,38 @@ int	ft_ultimate_range(int **range, int min, int max)
 	}
 	return (a);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int *range;
+	int min = 1;
+	int max = 6;
+
+	int size = ft_ultimate_range(&range, min, max);
+
+	if (size == -1)
+	{
+		printf("Error: Unable to create range.\n");
+		return 1;
+	}
+
+	if (range == NULL)
+	{
+		printf("Error: Range is NULL.\n");
+		return 1;
+	}
+
+	printf("Range: ");
+	for (int i = 0; i < size; i++)
+	{
+		printf("%d ", range[i]);
+	}
+	printf("\n");
+
+	free(range);
+
+	return 0;
+}
+*/

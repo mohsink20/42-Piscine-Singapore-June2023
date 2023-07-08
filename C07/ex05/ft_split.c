@@ -59,3 +59,25 @@ char		**ft_split(char *str, char *charset)
 	i[idx] = 0;
 	return (i);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	char *str = "Hello, world! This is a test.";
+	char *charset = " ,!.";
+
+	char **split = ft_split(str, charset);
+
+	char **ptr = split;
+	while (*ptr)
+	{
+		printf("%s\n", *ptr);
+		ptr++;
+	}
+
+	free(split);
+
+	return 0;
+}
+*/

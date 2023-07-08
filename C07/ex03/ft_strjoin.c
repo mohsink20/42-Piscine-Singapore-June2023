@@ -45,3 +45,21 @@ char		*ft_strjoin(int size, char **strs, char *sep)
 	*tmp = 0;
 	return (a);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	char *strs[] = {"Hello", "world", "from", "ft_strjoin!"};
+	int size = sizeof(strs) / sizeof(strs[0]);
+	char *sep = ", ";
+
+	char *result = ft_strjoin(size, strs, sep);
+
+	printf("Joined string: %s\n", result);
+
+	free(result);
+
+	return 0;
+}
+*/
