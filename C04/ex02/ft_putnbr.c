@@ -1,4 +1,5 @@
 #include <unistd.h>
+
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
@@ -26,3 +27,16 @@ void	ft_putnbr(int nb)
 	else
 		 ft_putchar(nb + 48);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int number = 12345;
+
+	ft_putnbr(number);
+	printf("\n");
+
+	return 0;
+}
+*/

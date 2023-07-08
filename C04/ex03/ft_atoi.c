@@ -34,3 +34,26 @@ int	ft_atoi(char *str)
 	result *= sign;
 	return (result);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	char str1[] = "12345";
+	char str2[] = "-987";
+	char str3[] = "  +42";
+	char str4[] = "invalid";
+
+	int num1 = ft_atoi(str1);
+	int num2 = ft_atoi(str2);
+	int num3 = ft_atoi(str3);
+	int num4 = ft_atoi(str4);
+
+	printf("Number 1: %d\n", num1);
+	printf("Number 2: %d\n", num2);
+	printf("Number 3: %d\n", num3);
+	printf("Number 4: %d\n", num4);
+
+	return 0;
+}
+*/

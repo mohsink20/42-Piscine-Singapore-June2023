@@ -33,3 +33,20 @@ void	ft_putstr_non_printable(char *str)
 		++str;
 	}
 }
+/*
+int main(void)
+{
+	char *str1 = "Hello, world!";
+	char *str2 = "Testing\n\tthe function.";
+	char *str3 = "Some non-printable characters: \x07\x1F\x80\xFF";
+
+	ft_putstr_non_printable(str1);
+	write(1, "\n", 1);
+	ft_putstr_non_printable(str2);
+	write(1, "\n", 1);
+	ft_putstr_non_printable(str3);
+	write(1, "\n", 1);
+
+	return 0;
+}
+*/

@@ -72,3 +72,21 @@ void	*ft_print_memory(void *addr, unsigned int size)
 	}
 	return (addr);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int arr[] = { 1, 2, 3, 4, 5 };
+	char str[] = "Hello, world!";
+	int size1 = sizeof(arr);
+	int size2 = sizeof(str);
+
+	printf("Printing memory for array:\n");
+	ft_print_memory(arr, size1);
+	printf("\nPrinting memory for string:\n");
+	ft_print_memory(str, size2);
+
+	return 0;
+}
+*/
