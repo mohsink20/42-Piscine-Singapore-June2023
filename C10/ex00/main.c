@@ -1,37 +1,37 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-void	ft_putstr(char *str)
+void displayString(char *str)
 {
-	while (*str)
-		write(1, str++, 1);
+    while (*str)
+        write(1, str++, 1);
 }
 
-int		main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	char	c;
-	int		a;
-	int		b;
+    char character;
+    int bytesRead;
+    int fileDescriptor;
 
-	if (argc == 1)
-		ft_putstr("File name missing.\n");
-	else if (argc > 2)
-		ft_putstr("Too many arguments.\n");
-	else
-	{
-		b = open(argv[1], O_RDONLY);
-		if (b == -1)
-			ft_putstr("Cannot read file.\n");
-		else
-		{
-			a = read(b, &c, 1);
-			while (a)
-			{
-				write(1, &c, 1);
-				a = read(b, &c, 1);
-			}
-			close(b);
-		}
-	}
-	return (0);
+    if (argc == 1)
+        displayString("File name missing.\n");
+    else if (argc > 2)
+        displayString("Too many arguments.\n");
+    else
+    {
+        fileDescriptor = open(argv[1], O_RDONLY);
+        if (fileDescriptor == -1)
+            displayString("Cannot read file.\n");
+        else
+        {
+            bytesRead = read(fileDescriptor, &character, 1);
+            while (bytesRead)
+            {
+                write(1, &character, 1);
+                bytesRead = read(fileDescriptor, &character, 1);
+            }
+            close(fileDescriptor);
+        }
+    }
+    return 0;
 }
