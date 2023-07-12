@@ -1,0 +1,6 @@
+hello
+world
+this
+is
+42
+Singapore

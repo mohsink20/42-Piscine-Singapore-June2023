@@ -2,8 +2,9 @@ CFLAGS = -Wall -Wextra -Werror
 TARGET = ft_cat
 SOURCES = main.c
 OBJECTS = $(SOURCES:.c=.o)
+HEADER = cat.h
 
-%.o: %.c
+%.o: %.c $(HEADER)
 	gcc $(CFLAGS) -c $<
 
 all: $(TARGET)
