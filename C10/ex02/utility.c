@@ -1,30 +1,42 @@
+// utility.c
+
 #include "tail.h"
 
-void	ft_putstr(char *str)
+void printString(char *str)
 {
-	while (*str)
-		write(1, str++, 1);
+    while (*str)
+        write(1, str++, 1);
 }
 
-void	print_error_msg(char *file)
+void printErrorMsg(char *file)
 {
-	ft_putstr(basename(g_prog));
-	ft_putstr(": ");
-	ft_putstr(file);
-	ft_putstr(": ");
-	ft_putstr(strerror(errno));
-	ft_putstr("\n");
+    printString(basename(g_tailProgram.programName));
+    printString(": ");
+    printString(file);
+    printString(": ");
+    printString(strerror(errno));
+    printString("\n");
 }
 
-int		ft_atoi(char *str)
+int convertToInt(char *str)
 {
-	int a;
+    int num = 0;
+    while (*str)
+    {
+        num *= 10;
+        num += (*(str++) - '0');
+    }
+    return num;
+}
 
-	a = 0;
-	while (*str)
-	{
-		a *= 10;
-		a += (*(str++) - '0');
-	}
-	return (a);
+void printNewLine()
+{
+    printString("\n");
+}
+
+void printPrefix(char *file)
+{
+    printString("==> ");
+    printString(file);
+    printString(" <==\n");
 }
